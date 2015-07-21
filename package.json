@@ -1,0 +1,27 @@
+{
+  "name": "hiligaynun-krush",
+  "version": "1.0.0",
+  "description": "Jquery Mobile App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbagaresgaray/Hiligaynun-Krush.git"
+  },
+  "author": "Philip Cesar B. Garay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbagaresgaray/Hiligaynun-Krush/issues"
+  },
+  "homepage": "https://github.com/jbagaresgaray/Hiligaynun-Krush#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-connect": "^0.10.1",
+    "grunt-contrib-livereload": "^0.1.2",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-regarde": "^0.1.1",
+    "matchdep": "^0.3.0"
+  }
+}
