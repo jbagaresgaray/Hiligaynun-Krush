@@ -4,7 +4,8 @@
   "description": "Jquery Mobile App",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "grunt test"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,14 @@
     "grunt-contrib-livereload": "^0.1.2",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-regarde": "^0.1.1",
-    "matchdep": "^0.3.0"
+    "matchdep": "^0.3.0",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-express-server": "^0.5.1",
+    "jshint-stylish": "^2.0.1",
+    "load-grunt-tasks": "^3.2.0"
+  },
+  "dependencies": {
+    "express": "^4.13.1"
   }
 }

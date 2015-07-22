@@ -5,4 +5,4 @@ node_modules/
 platforms/
 plugins/
 hooks/
-www/lib/
+www/bower_components/
