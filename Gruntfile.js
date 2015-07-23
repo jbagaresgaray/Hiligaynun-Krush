@@ -49,6 +49,13 @@ module.exports = function(grunt) {
                         ];
                     }
                 }
+            },
+            server: {
+                options: {
+                    port: 9000,
+                    hostname: '*',
+                    base: 'www'
+                }
             }
         },
         // grunt-open will open your browser at the project's URL
@@ -76,5 +83,9 @@ module.exports = function(grunt) {
         'connect',
         'openbrowser',
         'regarde'
+    ]);
+
+    grunt.registerTask('serve', [
+        'connect:server',
     ]);
 };

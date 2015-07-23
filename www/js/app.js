@@ -1,7 +1,12 @@
 var AppRouter = Backbone.Router.extend({
 
     routes:{
-        "":"home"
+        "":"home",
+        "text": "text",
+        "grid": "grid",
+        "buttons":"buttons",
+        "collapsible_accordions":"collapsible_accordions",
+        "dialogPopups":"dialog_popups"
     },
 
     initialize: function() {
@@ -18,15 +23,30 @@ var AppRouter = Backbone.Router.extend({
         this.changePage(new HomeView());
     },
 
-    /*text: function() {
+    text: function() {
         console.log('#text');
-        this.changePage(new Page1View());
+        this.changePage(new TextView());
     },
 
-    page2: function() {
-        console.log('#page2');
-        this.changePage(new Page2View());
-    },*/
+    grid: function() {
+        console.log('#grid');
+        this.changePage(new FlexBoxGrid());
+    },
+
+    buttons: function(){
+        console.log('#buttons');
+        this.changePage(new ButtonsView());
+    },
+
+    collapsible_accordions: function(){
+        console.log('#collapsible_accordions');
+        this.changePage(new collapsible_accordionsView());
+    },
+
+    dialogPopups: function(){
+        console.log('#dialog_popups');
+        this.changePage(new dialogPopupsView());
+    },
 
     changePage: function(page) {
         $(page.el).attr('data-role', 'page');
@@ -43,12 +63,15 @@ var AppRouter = Backbone.Router.extend({
             transition: transition
         });
     }
-
 });
 
 $(document).ready(function() {
     console.log('document ready');
-    tpl.loadTemplates(['main'],
+    tpl.loadTemplates([
+        'main',
+        'elements/text','elements/grid','elements/buttons','elements/header_footer','elements/listviews',
+        'elements/forms','elements/tables','elements/dialog_popups','elements/panels','elements/collapsible_accordions'
+        ],
         function() {
             app = new AppRouter();
             Backbone.history.start();
