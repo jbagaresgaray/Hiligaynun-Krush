@@ -1,51 +1,32 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>nativeDroid II - jQueryMobile Template</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-		<link rel="stylesheet" href="./bower_components/fontawesome/css/font-awesome.min.css" />
-		<link rel="stylesheet" href="./bower_components/jquerymobile/css/jquery.mobile.min.css" />
-		<link rel="stylesheet" href="./lib/waves/waves.min.css" />
-		<link rel="stylesheet" href="./lib/wow/animate.css" />
-		<link rel="stylesheet" href="./css/nativedroid2.css" />
-
-		<meta name="mobile-web-app-capable" content="yes">
-	 	<meta name="apple-mobile-web-app-capable" content="yes" />
+<head>
+    <title>nativeDroid II - jQueryMobile Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="bower_components/jquery-mobile-bower/css/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="lib/waves/waves.min.css" />
+    <link rel="stylesheet" href="lib/wow/animate.css" />
+    <link rel="stylesheet" href="css/nativedroid2.css" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+</head>
 
-	</head>
-	<body>
+<body>
+    <div id="home">
+    </div>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/jquery/jquery.min.js"></script>
+    <script src="bower_components/jquery-mobile-bower/js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="bower_components/components-backbone/backbone-min.js"></script>
+    <script src="lib/waves/waves.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/nativedroid2.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/views/home.js"></script>
+</body>
 
-		<div data-role="page">
-
-			<nd2-include data-src="examples/fragments/panel.left.html"></nd2-include>
-
-			<div data-role="panel" id="bottomsheet" data-animate="false" data-position='bottom' data-display="overlay">
-				<nd2-include data-src="examples/fragments/bottom.sheet.html"></nd2-include>
-			</div>
-
-			<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
-				<a href="#bottomsheet" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-more-vert"></i></a>
-				<a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>
-				<h1 class="wow fadeIn" data-wow-delay='0.4s'>Page Title</h1>
-			</div>
-
-			<div role="main" class="ui-content" data-inset="false">
-				<p>(home)</p>
-			</div>
-
-		</div>
-
-		<script src="./bower_components/jquery/2.1.4/jquery.min.js"></script>
-		<script src="./bower_components/jquery-ui/1.11.4/jquery-ui.min.js"></script>
-		<script src="./bower_components/jquerymobile/js/jquery.mobile.min.js"></script>
-		<script src="lib/underscore-min.js"></script>
-    	<script src="lib/backbone-min.js"></script>
-		<script src="./lib/waves/waves.min.js"></script>
-		<script src="./lib/wow/wow.min.js"></script>
-		<script src="./lib/nativedroid2.js"></script>
-		<script src="./js/nd2settings.js"></script>
-
-	</body>
 </html>

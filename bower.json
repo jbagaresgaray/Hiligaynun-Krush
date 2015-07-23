@@ -2,7 +2,8 @@
   "name": "hiligaynun-krush",
   "private": "true",
   "dependencies": {
-    "jquery-mobile": "~1.4.5",
-    "fontawesome": "~4.3.0"
+    "fontawesome": "~4.3.0",
+    "components-backbone": "~1.2.0",
+    "jquery-mobile-bower": "~1.4.5"
   }
 }
