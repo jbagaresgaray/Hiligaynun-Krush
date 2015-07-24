@@ -1,7 +1,7 @@
-window.HomeView = Backbone.View.extend({
+window.tabView = Backbone.View.extend({
 
     initialize: function() {
-        this.template = _.template(tpl.get('main'));
+        this.template = _.template(tpl.get('extended/tabs'));
     },
 
     render: function(eventName) {
@@ -10,10 +10,10 @@ window.HomeView = Backbone.View.extend({
     },
 });
 
-window.TextView = Backbone.View.extend({
+window.cardsView = Backbone.View.extend({
 
     initialize: function() {
-        this.template = _.template(tpl.get('elements/text'));
+        this.template = _.template(tpl.get('extended/cards'));
     },
 
     render: function(eventName) {
@@ -22,10 +22,10 @@ window.TextView = Backbone.View.extend({
     },
 });
 
-window.FlexBoxGrid = Backbone.View.extend({
+window.iconsView = Backbone.View.extend({
 
     initialize: function() {
-        this.template = _.template(tpl.get('elements/grid'));
+        this.template = _.template(tpl.get('extended/icons'));
     },
 
     render: function(eventName) {
@@ -34,10 +34,10 @@ window.FlexBoxGrid = Backbone.View.extend({
     },
 });
 
-window.ButtonsView = Backbone.View.extend({
+window.chartsView = Backbone.View.extend({
 
     initialize: function() {
-        this.template = _.template(tpl.get('elements/buttons'));
+        this.template = _.template(tpl.get('extended/charts'));
     },
 
     render: function(eventName) {
@@ -46,10 +46,10 @@ window.ButtonsView = Backbone.View.extend({
     },
 });
 
-window.collapsible_accordionsView = Backbone.View.extend({
+window.toastView = Backbone.View.extend({
 
 	initialize: function(){
-		this.template = _.template(tpl.get('elements/collapsible_accordions'));
+		this.template = _.template(tpl.get('extended/toasts'));
 	},
 
 	render: function(eventName){
@@ -58,10 +58,10 @@ window.collapsible_accordionsView = Backbone.View.extend({
 	},
 });
 
-window.dialogPopupsView = Backbone.View.extend({
+window.bottomSheetsView = Backbone.View.extend({
 
 	initialize: function(){
-		this.template = _.template(tpl.get('elements/dialog_popups'));
+		this.template = _.template(tpl.get('extended/bottomsheet'));
 	},
 
 	render: function(eventName){
