@@ -1,7 +1,7 @@
 window.blogView = Backbone.View.extend({
 
     initialize: function() {
-        this.template = _.template(tpl.get('pages/blog'));
+        this.template = _.template(tpl.get('pages/letra'));
     },
 
     render: function(eventName) {
@@ -61,7 +61,7 @@ window.galleryView = Backbone.View.extend({
 window.mailIndoxView = Backbone.View.extend({
 
     initialize: function() {
-        this.template = _.template(tpl.get('pages/mail_box'));
+        this.template = _.template(tpl.get('pages/hampang'));
     },
 
     render: function(eventName) {
@@ -85,7 +85,7 @@ window.productServicesView = Backbone.View.extend({
 window.profileView = Backbone.View.extend({
 
     initialize: function() {
-        this.template = _.template(tpl.get('pages/profile'));
+        this.template = _.template(tpl.get('pages/hibaluon'));
     },
 
     render: function(eventName) {

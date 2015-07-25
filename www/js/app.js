@@ -1,7 +1,7 @@
 var AppRouter = Backbone.Router.extend({
 
     routes: {
-        '': 'home',
+        'home': 'home',
         'text': 'text',
         'grid': 'grid',
         'buttons': 'buttons',
@@ -182,7 +182,7 @@ $(document).ready(function() {
             'elements/forms', 'elements/tables', 'elements/dialog_popups', 'elements/panels', 'elements/collapsible_accordions',
             'extended/tabs', 'extended/cards', 'extended/icons', 'extended/charts', 'extended/toasts', 'extended/bottomsheet',
             'info/colorsAndstyles', 'info/credits',
-            'pages/profile','pages/dashboard','pages/gallery','pages/chat','pages/mail_inbox','pages/team','pages/products_services','pages/blog','pages/blogpost'
+            'pages/hibaluon','pages/dashboard','pages/gallery','pages/chat','pages/hampang','pages/team','pages/products_services','pages/letra','pages/blogpost'
         ],
         function() {
             app = new AppRouter();
