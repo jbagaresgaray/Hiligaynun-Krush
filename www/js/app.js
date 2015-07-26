@@ -1,6 +1,7 @@
 var AppRouter = Backbone.Router.extend({
 
     routes: {
+        '': 'home',
         'home': 'home',
         'text': 'text',
         'grid': 'grid',
