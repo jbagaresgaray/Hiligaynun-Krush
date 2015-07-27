@@ -3,7 +3,6 @@
   "private": "true",
   "dependencies": {
     "fontawesome": "~4.3.0",
-    "components-backbone": "~1.2.0",
     "jquery-mobile-bower": "~1.4.5"
   }
 }
