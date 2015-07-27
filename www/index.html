@@ -6,29 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="bower_components/jquery-mobile-bower/css/jquery.mobile-1.4.5.min.css" />
-    <link rel="stylesheet" href="lib/waves/waves.min.css" />
-    <link rel="stylesheet" href="lib/wow/animate.css" />
-    <link rel="stylesheet" href="css/nativedroid2.css" />
+    <!-- nativeDroid core CSS -->
+    <link rel="stylesheet" href="lib/jquerymobile.nativedroid.css" />
+    <!-- nativeDroid: Light/Dark -->
+    <link rel="stylesheet" href="lib/jquerymobile.nativedroid.light.css" id='jQMnDTheme' />
+    <!-- Custom -->
+    <link rel="stylesheet" href="css/custom.css" />
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-
-    <script src="bower_components/underscore/underscore.js"></script>
     <script src="bower_components/jquery/jquery.min.js"></script>
     <script src="bower_components/jquery-mobile-bower/js/jquery.mobile-1.4.5.min.js"></script>
-    <script src="bower_components/components-backbone/backbone-min.js"></script>
-    <script src="lib/waves/waves.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/chartist/chartist.min.js"></script>
-    <script src="lib/nativedroid2.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/utils.js"></script>
-    <script src="js/views/elements.js"></script>
-    <script src="js/views/extended.js"></script>
-    <script src="js/views/info.js"></script>
-    <script src="js/views/pages.js"></script>
+    <script src="js/nativedroid.script.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        console.log('asdasdsad');
+        var header = $('[data-role=header]').outerHeight();
+        var panel = $('.ui-panel').height();
+        var panelheight = panel - header;
+        $('.ui-panel').css({
+            'top': header,
+            'min-height': panelheight
+        });
+    });
+    </script>
 </head>
 
-<body></body>
+<body>
+    <div id="main" data-role="page" data-theme='b'>
+        <div data-role="panel" id="mypanel" data-theme="a" class "profile" data-display="overlay">
+            <ul data-role="listview" data-inset="false">
+                <li data-icon="false" class="profile" style="height:100px;background-color: #2C3E50 !important;color: #ECF0F1 !important;">
+                    <div class="block center">
+                        <center>
+                            <img src="img/Dude.png" class="profile-panel-img pull-left">
+                            <h2 id="student_name2"></h2>
+                        </center>
+                    </div>
+                </li>
+                <li data-icon="false" class="profile-back">
+                    <a href="templates/hibaluon.html" data-transition="pop" data-direction="reverse" data-ajax="false">
+                        <img src="img/Bulb.png" style="width:64px;height:64px;margin-left:10px;margin-top:15px;">
+                        <h2>HIBALUON TA</h2>
+                    </a>
+                </li>
+                <li data-icon="false" class="profile-back">
+                    <a href="templates/settings.html" data-ajax="false">
+                        <img src="img/Clipboard.png" style="width:64px;height:64px;margin-left:10px;margin-top:15px;">
+                        <h2>HAMPANG</h2>
+                    </a>
+                </li>
+                <li data-role="list-divider"></li>
+                <li data-icon="false" class="profile-back">
+                    <a href="templates/options.html" data-ajax="false">
+                        <img src="img/Touch.png" style="width:64px;height:64px;margin-left:10px;margin-top:15px;">
+                        <h2>OPTIONS</h2>
+                    </a>
+                </li>
+                <li data-icon="false" class="profile-back">
+                    <a href="templates/settings.html" data-ajax="false">
+                        <img src="img/Settings.png" style="width:64px;height:64px;margin-left:10px;margin-top:15px;">
+                        <h2>SETTINGS</h2>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
+            <a href="#mypanel"><i class="fa fa-reorder fa-lg fa-inverse"></i></a>
+            <h2>Hiligaynun Krush</h2>
+        </div>
+        <div data-role="content">
+            <ul id="list_profile" data-role="listview" data-inset="false" class="profile">
+                <li data-icon="false" class="cover_photo">
+                </li>
+                <li data-icon="false" class="fac_cover_photo">
+                </li>
+                <li data-icon="false" class="dev-1">
+                </li>
+                <li data-icon="false" class="dev-2">
+                </li>
+                <li data-icon="false" class="dev-3">
+                </li>
+                <li data-icon="false" class="dev-4">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $('#mypanel').load('templates/panel.html').trigger('refresh');
+        $('[data-role=listview]').trigger('refresh');
+    });
+    </script>
+</body>
 
 </html>
